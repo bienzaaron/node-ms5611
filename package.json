@@ -1,0 +1,46 @@
+{
+  "name": "ms5611",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"      
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "ms5611",
+    "i2c",
+    "pressure",
+    "barometer",
+    "temperature",
+    "thermometer"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bienzaaron/node-ms5611.git"
+  },
+  "author": "AJ Bienz <ajbienz7@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bienzaaron/node-ms5611/issues"
+  },
+  "dependencies": {
+    "i2c-bus": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/i2c-bus": "^5.1.0",
+    "unbuild": "^0.7.3"
+  }
+}
